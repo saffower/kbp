@@ -17,7 +17,7 @@ spec:
     spec: 
       containers:
       - image: brendanburns/journal-server:latest
-        imagePullPolicy: ifNotPresent
+        imagePullPolicy: IfNotPresent
         name: frontend
         resources:
           requests: 
