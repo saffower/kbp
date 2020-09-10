@@ -10,19 +10,19 @@ spec:
   selector:
     matchLabels:
       app: frontend
-    template:
-      metadata:
-        labels:
-          app: frontend
-      spec: 
-        containers:
-          image: brendanburns/journal-server:latest
-          imagePullPolicy: ifNotPresent
-          name: frontend
-          resources:
-            requests: 
-              cpu: "1.0"
-              memory: "1G"
-            limits:
-              cpu: "1.0"
-              memory: "1G"
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec: 
+      containers:
+        image: brendanburns/journal-server:latest
+        imagePullPolicy: ifNotPresent
+        name: frontend
+        resources:
+          requests: 
+            cpu: "1.0"
+            memory: "1G"
+          limits:
+            cpu: "1.0"
+            memory: "1G"
